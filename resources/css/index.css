@@ -244,7 +244,8 @@ input[type=text]:focus {
 /* All smart phones (portrait) */
 @media only screen and (max-width: 420px) {
 body {
-  background-color: blue;
+  background-color: pink;
+  width: 100%;
 }
 }
 
@@ -270,5 +271,5 @@ body {
 @media only screen and (min-width: 1366px) {
 body {
   background-color: yellow;
-}V
+}
 }
