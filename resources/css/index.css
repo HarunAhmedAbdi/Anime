@@ -245,6 +245,7 @@ input[type=text]:focus {
 @media only screen and (max-width: 420px) {
 body {
   background-color: blue;
+  width: 100%;
 }
 }
 
@@ -270,5 +271,5 @@ body {
 @media only screen and (min-width: 1366px) {
 body {
   background-color: yellow;
-}V
+}
 }
