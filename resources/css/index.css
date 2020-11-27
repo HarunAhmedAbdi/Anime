@@ -244,7 +244,7 @@ input[type=text]:focus {
 /* All smart phones (portrait) */
 @media only screen and (max-width: 420px) {
 body {
-  background-color: blue;
+  background-color: pink;
   width: 100%;
 }
 }
