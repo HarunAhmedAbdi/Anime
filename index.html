@@ -9,33 +9,34 @@
   </head>
   <body>
     <!--The header for the website!-->
-    <header class=site-Header-Wrapper>
+    <header class=siteHeaderWrapper>
       <div class="headerContent">
-        <div class="site-Header">
-          <img src="./resources/images/Logos/eye-logo.png" id="siteLogo" alt="Logo">
+        <div class="siteHeader">
+          <img src="./resources/images/Logos/eye-logo.png" id="siteLogo" alt="logo">
           <div>
-            <span class="siteName">Dojo Anime</span>
-            <span class=><em>Never Miss Your Favorite Anime Again!</em></span>
+            <h1 class="siteName">Dojo Anime</h1>
+            <span class="slogan"><em>Never Miss Your Favorite Anime Again!</em></span>
           </div>
-          
         </div>
         <!--The navigational links below the header-->
-        <nav class=site-Navigational-Links>
+        <nav class=siteNavigationalLinks>
           <ul>
-            <li><a class="navLinks" href="index.html">Home</a></li>
-            <li><a class="navLinks" href="latest-updates.html">Latest Updates</a></li>
-            <li><a class="navLinks" href="https://www.google.com" >Schedule</a></li>
-            <li><a class="navLinks" href="genres.html">Genres</a></li>
-            <li><a class="navLinks" href="random.html">Random Anime</a></li>
-            <li><a class="navLinks" href="about.html">About Us</a></li>
+            <li><a class="navLink" href="index.html">Home</a></li>
+            <li><a class="navLink" href="latest-updates.html">Latest Updates</a></li>
+            <li><a class="navLink" href="https://www.google.com" target="_blank">Schedule</a></li>
+            <li><a class="navLink" href="genres.html">Genres</a></li>
+            <li><a class="navLink" href="random.html">Random Anime</a></li>
+            <li><a class="navLink" href="about.html">About Us</a></li>
           </ul>
         </nav>
         <!--Search bar-->
-        <div class=search-Bar-Container>
-          <input type="text" name="search" placeholder="Search..">
+        <div class=searchBarContainer>
+          <form>
+            <input type="text" name="search" placeholder="Search..">
+            <input class="searchButton" type="submit" name="searchButton" value="Search">
+          </form>
         </div>
       </div>
-
     </header>
     <main>
       <!--Section for automatic scrolling panel-->
