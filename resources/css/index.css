@@ -270,6 +270,93 @@ body {
 /* Monitor screens and HD devices */
 @media only screen and (min-width: 1366px) {
 body {
-  background-color: yellow;
+  background-color: 
 }
+header {
+  background-color: 
+ }
+}
+
+/* scrolling banner styles */
+.firstCOntentSegment {
+  width: 1000px;
+  height: 500px
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  height: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba (25, 125, 148, 0.5);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 5s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Banner Image */
+.bannerImg {
+  width: 100%;
+  height: inherit;
+}
+.numberText {
+  height: inherit;
+}
+.mySlides {
+  height: inherit;
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }

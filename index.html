@@ -41,18 +41,56 @@
     <main>
       <!--Section for automatic scrolling panel-->
       <section class="firstContentSegment">
-      </section>
-      <section class="sideBarAnnouncements">
-        <div class="announcementsTitle">
-          <h3>Announcements</h3>
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">One Piece</div>
+          <img src="resources/images/Anime-Wallpapers/one-piece wallpaper.png" class="bannerImg">
+          <div class="text">Caption Text</div>
         </div>
-        <div>
-          <ul>
-            <li>One Piece</li>
-            <li>Boruto</li>
-          </ul>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">Naruto</div>
+          <img src="resources/images/Anime-Wallpapers/bleach-wallpaper.jpg" class="bannerImg">
+          <div class="text">Caption Two</div>
         </div>
-
+        
+        <div class="mySlides fade">
+          <div class="numbertext">Dragon Ball</div>
+          <img src="resources/images/Anime-Wallpapers/boruto-wallpaper.png" class="bannerImg">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+        </script>
       </section>
       <!--Section for Latest Updates-->
       <section class="contentSegments latestUpdatesSegment">
@@ -287,9 +325,19 @@
       <!--Section for Popular Anime-->
       <section class="fourth.Content.Segment">
         <div>
-
         </div>
       </section>
+      <aside class="sideBarAnnouncements">
+        <div class="announcementsTitle">
+          <h3>Announcements</h3>
+        </div>
+        <div>
+          <ul>
+            <li>One Piece</li>
+            <li>Boruto</li>
+          </ul>
+        </div>
+      </aside>
     </main>
     <footer>
       <div class="animePosterHolder">
