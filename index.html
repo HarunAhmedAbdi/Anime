@@ -9,49 +9,88 @@
   </head>
   <body>
     <!--The header for the website!-->
-    <header class=site-Header-Wrapper>
+    <header class=siteHeaderWrapper>
       <div class="headerContent">
-        <div class="site-Header">
-          <img src="./resources/images/Logos/eye-logo.png" id="siteLogo" alt="Logo">
+        <div class="siteHeader">
+          <img src="./resources/images/Logos/eye-logo.png" id="siteLogo" alt="logo">
           <div>
-            <span class="siteName">Dojo Anime</span>
-            <span class=><em>Never Miss Your Favorite Anime Again!</em></span>
+            <h1 class="siteName">Dojo Anime</h1>
+            <span class="slogan"><em>Never Miss Your Favorite Anime Again!</em></span>
           </div>
-          
         </div>
         <!--The navigational links below the header-->
-        <nav class=site-Navigational-Links>
+        <nav class=siteNavigationalLinks>
           <ul>
-            <li><a class="navLinks" href="index.html">Home</a></li>
-            <li><a class="navLinks" href="latest-updates.html">Latest Updates</a></li>
-            <li><a class="navLinks" href="https://www.google.com" >Schedule</a></li>
-            <li><a class="navLinks" href="genres.html">Genres</a></li>
-            <li><a class="navLinks" href="random.html">Random Anime</a></li>
-            <li><a class="navLinks" href="about.html">About Us</a></li>
+            <li><a class="navLink" href="index.html">Home</a></li>
+            <li><a class="navLink" href="latest-updates.html">Latest Updates</a></li>
+            <li><a class="navLink" href="https://www.google.com" target="_blank">Schedule</a></li>
+            <li><a class="navLink" href="genres.html">Genres</a></li>
+            <li><a class="navLink" href="random.html">Random Anime</a></li>
+            <li><a class="navLink" href="about.html">About Us</a></li>
           </ul>
         </nav>
         <!--Search bar-->
-        <div class=search-Bar-Container>
-          <input type="text" name="search" placeholder="Search..">
+        <div class=searchBarContainer>
+          <form>
+            <input type="text" name="search" placeholder="Search..">
+            <input class="searchButton" type="submit" name="searchButton" value="Search">
+          </form>
         </div>
       </div>
-
     </header>
     <main>
       <!--Section for automatic scrolling panel-->
       <section class="firstContentSegment">
-      </section>
-      <section class="sideBarAnnouncements">
-        <div class="announcementsTitle">
-          <h3>Announcements</h3>
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">One Piece</div>
+          <img src="resources/images/Anime-Wallpapers/one-piece wallpaper.png" class="bannerImg">
+          <div class="text">Caption Text</div>
         </div>
-        <div>
-          <ul>
-            <li>One Piece</li>
-            <li>Boruto</li>
-          </ul>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">Naruto</div>
+          <img src="resources/images/Anime-Wallpapers/bleach-wallpaper.jpg" class="bannerImg">
+          <div class="text">Caption Two</div>
         </div>
-
+        
+        <div class="mySlides fade">
+          <div class="numbertext">Dragon Ball</div>
+          <img src="resources/images/Anime-Wallpapers/boruto-wallpaper.png" class="bannerImg">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+        </script>
       </section>
       <!--Section for Latest Updates-->
       <section class="contentSegments latestUpdatesSegment">
@@ -286,9 +325,19 @@
       <!--Section for Popular Anime-->
       <section class="fourth.Content.Segment">
         <div>
-
         </div>
       </section>
+      <aside class="sideBarAnnouncements">
+        <div class="announcementsTitle">
+          <h3>Announcements</h3>
+        </div>
+        <div>
+          <ul>
+            <li>One Piece</li>
+            <li>Boruto</li>
+          </ul>
+        </div>
+      </aside>
     </main>
     <footer>
       <div class="animePosterHolder">
